@@ -140,7 +140,6 @@ const addDepartment = () => {
               "Successfully added " + departmentName + " to the database!"
             );
             showDepartments();
-            promptUser();
           }
         }
       );
@@ -183,7 +182,6 @@ const addRole = () => {
               "Successfully added " + answersArray[0] + " to the database!"
             );
             showRoles();
-            promptUser();
           }
         }
       );
@@ -209,14 +207,14 @@ const addEmployee = () => {
         type: "number",
         name: "roleId",
         message:
-          "What is this employee's role? Please enter '1' for 'manager', '2' for 'intern', '3' for engineer, '4' for 'beach boy', or '5' for 'spice girl'.",
+          "Please enter the ID number for this employee's job title.",
         validate: (roleId) => promptValidation(roleId),
       },
       {
         type: "number",
         name: "managerId",
         message:
-          "Who is this employee's manager? Enter '1' for Michael Scott, '2' for Jim Halpert, or '3' for Posh Spice. ",
+          "Please enter the ID number of this employee's manager.",
         validate: (managerId) => promptValidation(managerId),
       },
     ])
@@ -237,7 +235,7 @@ const addEmployee = () => {
                 " to the database!"
             );
             showEmployees();
-            promptUser();
+            
           }
         }
       );
@@ -273,7 +271,6 @@ const updateRole = () => {
           } else {
             console.log("Successfully updated the database!");
             showEmployees();
-            promptUser();
           }
         }
       );
