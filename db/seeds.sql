@@ -1,26 +1,39 @@
 INSERT INTO departments (name)
 VALUES
-('aruba'),
-('jamaica'),
-('bermuda'),
-('bahama'),
-('key largo'),
-('montego'),
-('kokomo');
+('Marketing'),
+('Accounting'),
+('Engineering'),
+('Legal'),
+('Human Resources'),
+('Talent'),
+('Sales');
 
 INSERT INTO roles (title, salary, dept_id)
 VALUES
-('manager', '70000.00', '1'),
-('intern', '10.00', '5'),
-('engineer', '100000.00', '7'),
-('beach boy', '500000.00', '4');
+('Manager', '70000.00', '1'),
+('Accountant', '80000', '2'),
+('Intern', '10.00', '3'),
+('Engineer', '100000.00', '3'),
+('Lawyer', '200000', '4')
+('HR Manager', '60000', '5')
+('Spice Girl', '500000.00', '6'),
+('Sales Lead', '60000.00', '7' )
+
 
 INSERT INTO employees (first_name, last_name, role_id, manager_id)
 VALUES
-('michael', 'scott', '1', NULL),
-('jim', 'halpert', '4', '2'),
-('pam', 'beasley', '4', '2'),
-('ryan', 'howard', '2', '1'),
-('dwight', 'schrute', '3', '1'),
-('stanley', 'yelnats', '2', '1');
+('Michael', 'Scott', '1', NULL),
+('Jim', 'Halpert', '1', NULL),
+('Pam', 'Beasley', '4', '1'),
+('Angela', 'Martin', '2', '1')
+('Ryan', 'Howard', '3', '1'),
+('Dwight', 'Schrute', '7', '1'),
+('Kevin', 'Malone', '4', '1')
+('Erin', 'Hannon', '5', '1')
+('Posh', 'Spice', '7', '9'),
+('Scary', 'Spice', '7', '9'),
+('Sporty', 'Spice', '7', '9'),
+('Baby', 'Spice', '7', '9'),
+('Ginger', 'Spice', '7', '9');
+
 
